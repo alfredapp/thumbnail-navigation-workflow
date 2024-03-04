@@ -1118,7 +1118,7 @@
 				<key>filterable</key>
 				<true/>
 				<key>fixedorder</key>
-				<false/>
+				<true/>
 				<key>imageaspect</key>
 				<integer>2</integer>
 				<key>inputfile</key>

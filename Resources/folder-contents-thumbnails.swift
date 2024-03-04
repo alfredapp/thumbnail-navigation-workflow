@@ -5,7 +5,6 @@ import UniformTypeIdentifiers
 
 // Helpers
 struct ScriptFilter: Codable {
-  let skipknowledge: Bool
   let preselect: String?
   let items: [Item]
 
@@ -94,7 +93,7 @@ let folderContents = targetFolders.flatMap { folder -> [URL] in
 // If folder has no items, provide an item to navigate to parent
 guard folderContents.count > 0 else {
   let navigateUp = ScriptFilter.Item(navigateUpFrom: targetFolders[0])
-  let sfFull = ScriptFilter(skipknowledge: true, preselect: currentFolder, items: [navigateUp])
+  let sfFull = ScriptFilter(preselect: currentFolder, items: [navigateUp])
   let jsonData = try JSONEncoder().encode(sfFull)
   print(String(data: jsonData, encoding: .utf8)!)
   exit(EXIT_SUCCESS)
@@ -124,6 +123,6 @@ let sortedPaths = {
 let sfItems = sortedPaths.map { ScriptFilter.Item($0) }
 
 // Output JSON
-let sfFull = ScriptFilter(skipknowledge: true, preselect: currentFolder, items: sfItems)
+let sfFull = ScriptFilter(preselect: currentFolder, items: sfItems)
 let jsonData = try JSONEncoder().encode(sfFull)
 print(String(data: jsonData, encoding: .utf8)!)
