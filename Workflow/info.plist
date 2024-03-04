@@ -808,6 +808,8 @@
 				<integer>0</integer>
 				<key>fontmode</key>
 				<integer>0</integer>
+				<key>fontsizing</key>
+				<integer>0</integer>
 				<key>footertext</key>
 				<string></string>
 				<key>inputfile</key>
@@ -819,6 +821,8 @@
 				<key>outputmode</key>
 				<integer>0</integer>
 				<key>scriptinput</key>
+				<integer>0</integer>
+				<key>spellchecking</key>
 				<integer>0</integer>
 				<key>stackview</key>
 				<true/>
@@ -1113,6 +1117,8 @@
 				<integer>3</integer>
 				<key>filterable</key>
 				<true/>
+				<key>fixedorder</key>
+				<false/>
 				<key>imageaspect</key>
 				<integer>2</integer>
 				<key>inputfile</key>
@@ -1358,6 +1364,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>displaymode</key>
+				<integer>0</integer>
 				<key>stackview</key>
 				<true/>
 			</dict>
@@ -1579,7 +1587,7 @@ Search for folders with the `nav` keyword and press &lt;kbd&gt;↩&lt;/kbd&gt; t
 
 ![Filtering for Catan](images/about/catanfilter.png)
 
-* &lt;kbd&gt;↩&lt;/kbd&gt; Open or preview file, or navigate inside folder.
+* &lt;kbd&gt;↩&lt;/kbd&gt; Open or view file, or navigate inside folder.
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Flip sort order.
 * &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Reveal in Finder.
 * &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Navigate to parent folder.
@@ -2089,8 +2097,6 @@ Can take multiple paths separated by commas.</string>
 			<string>fast_directories</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>2024.1</string>
 	<key>webaddress</key>
