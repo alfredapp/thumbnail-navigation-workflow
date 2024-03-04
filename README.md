@@ -14,7 +14,7 @@ Search for folders with the `nav` keyword and press <kbd>↩&#xFE0E;</kbd> to na
 
 ![Filtering for Catan](Workflow/images/about/catanfilter.png)
 
-* <kbd>↩&#xFE0E;</kbd> Open or preview file, or navigate inside folder.
+* <kbd>↩&#xFE0E;</kbd> Open or view file, or navigate inside folder.
 * <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Flip sort order.
 * <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd> Reveal in Finder.
 * <kbd>⇧</kbd><kbd>↩&#xFE0E;</kbd> Navigate to parent folder.
