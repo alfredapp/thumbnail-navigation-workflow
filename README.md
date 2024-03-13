@@ -12,14 +12,16 @@ Search for folders with the `nav` keyword and press <kbd>↩&#xFE0E;</kbd> to na
 
 ![Grid view of files](Workflow/images/about/filegrid.png)
 
-![Filtering for Catan](Workflow/images/about/catanfilter.png)
+![Filtering for Catan](Workflow/images/about/gridfilter.png)
 
 * <kbd>↩&#xFE0E;</kbd> Open or view file, or navigate inside folder.
 * <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Flip sort order.
 * <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd> Reveal in Finder.
 * <kbd>⇧</kbd><kbd>↩&#xFE0E;</kbd> Navigate to parent folder.
 
-![Viewing a PDF](Workflow/images/about/pdfview.png)
+![Viewing image](Workflow/images/about/imageview.png)
+
+![Viewing PDF](Workflow/images/about/pdfview.png)
 
 ![Viewing Markdown file](Workflow/images/about/mdview.png)
 
