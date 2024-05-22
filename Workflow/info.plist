@@ -121,19 +121,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>28D41145-AE82-4DF0-8935-4BEDD37A0A05</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1CAE6FDB-BE94-4A00-8B5A-5F0FD8444CE5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>29F71FD9-1F71-454E-B259-B5B37AB2CE72</key>
 		<array>
 			<dict>
@@ -190,18 +177,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>72AE4447-DADA-48DB-A6E2-5ADBADFCB059</string>
-				<key>disabled</key>
-				<true/>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>ADBF1D92-805F-49C8-B664-07D6A1AB1224</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -377,31 +352,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>ADBF1D92-805F-49C8-B664-07D6A1AB1224</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>72AE4447-DADA-48DB-A6E2-5ADBADFCB059</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>28D41145-AE82-4DF0-8935-4BEDD37A0A05</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>5B89B08D-56DB-4F05-B3AC-DE81C26362E4</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B22813C7-D4BD-4B54-B125-8C260C1EA5B1</key>
 		<array>
 			<dict>
@@ -515,18 +465,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>72AE4447-DADA-48DB-A6E2-5ADBADFCB059</string>
-				<key>disabled</key>
-				<true/>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>ADBF1D92-805F-49C8-B664-07D6A1AB1224</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -804,48 +742,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>function envVar(varName) {
-  return $.NSProcessInfo
-    .processInfo
-    .environment
-    .objectForKey(varName).js
-}
-
-function writeSTDOUT(string) {
-  const nsdata = $(string).dataUsingEncoding($.NSUTF8StringEncoding)
-  $.NSFileHandle.fileHandleWithStandardOutput.writeData(nsdata)
-}
-
-function run(argv) {
-  const dirsVarName = "fast_directories"
-
-  const newDirs = envVar(dirsVarName).split(",").map(e =&gt; e.trim()).join(" : ")
-  Application("com.runningwithcrayons.alfred").setConfiguration(
-    dirsVarName, { toValue: newDirs, inWorkflow: envVar("alfred_workflow_bundleid") })
-  return writeSTDOUT(newDirs)
-}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>28D41145-AE82-4DF0-8935-4BEDD37A0A05</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -863,38 +759,6 @@ function run(argv) {
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>C60E8824-08FA-4B15-B915-A438040FEA72</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:fast_directories}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>,</string>
-						<key>outputlabel</key>
-						<string>Commas</string>
-						<key>uid</key>
-						<string>5B89B08D-56DB-4F05-B3AC-DE81C26362E4</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>No Commas</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>ADBF1D92-805F-49C8-B664-07D6A1AB1224</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1806,15 +1670,6 @@ Configure the Fast Entry section in the [Workflow’s Configuration](https://www
 			<key>ypos</key>
 			<real>700</real>
 		</dict>
-		<key>28D41145-AE82-4DF0-8935-4BEDD37A0A05</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<real>445</real>
-			<key>ypos</key>
-			<real>220</real>
-		</dict>
 		<key>29F71FD9-1F71-454E-B259-B5B37AB2CE72</key>
 		<dict>
 			<key>xpos</key>
@@ -1941,15 +1796,6 @@ Configure the Fast Entry section in the [Workflow’s Configuration](https://www
 			<real>595</real>
 			<key>ypos</key>
 			<real>75</real>
-		</dict>
-		<key>ADBF1D92-805F-49C8-B664-07D6A1AB1224</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>xpos</key>
-			<real>300</real>
-			<key>ypos</key>
-			<real>240</real>
 		</dict>
 		<key>B22813C7-D4BD-4B54-B125-8C260C1EA5B1</key>
 		<dict>
