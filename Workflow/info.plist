@@ -1591,6 +1591,7 @@ Search for folders with the `nav` keyword and press &lt;kbd&gt;↩&lt;/kbd&gt; t
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Flip sort order.
 * &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Reveal in Finder.
 * &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Navigate to parent folder.
+* &lt;kbd&gt;⌃&lt;/kbd&gt; Show full name in subtitle.
 
 ![Viewing image](images/about/imageview.png)
 

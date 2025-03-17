@@ -16,6 +16,7 @@ struct ScriptFilter: Codable {
     let subtitle: String
     let type: String
     let icon: FileIcon
+    let mods: [String: [String: String]]
     let arg: String
 
     // Helper for icon
@@ -27,6 +28,7 @@ struct ScriptFilter: Codable {
     // Main initializer to use on existing files
     init(_ fileURL: URL) {
       let fileString = fileURL.path
+      let fileBasename = fileURL.lastPathComponent
       let currentFolder = fileURL.deletingLastPathComponent()
       let parentFolder = currentFolder.deletingLastPathComponent()
       let currentFolderString = currentFolder.path
@@ -34,9 +36,10 @@ struct ScriptFilter: Codable {
 
       self.variables = ["current": currentFolderString, "parent": parentFolderString]
       self.uid = fileString
-      self.title = fileURL.lastPathComponent
+      self.title = fileBasename
       self.subtitle = "⇧↩ Up · \((currentFolderString as NSString).abbreviatingWithTildeInPath)"
       self.type = "file:skipcheck"
+      self.mods = ["ctrl": ["subtitle": fileBasename]]
       self.arg = fileString
 
       // Use file as the icon if path can be viewed in Alfred, otherwise use the file type icon
@@ -62,6 +65,7 @@ struct ScriptFilter: Codable {
       self.subtitle = "Current folder is empty"
       self.type = "default"
       self.icon = FileIcon(path: "images/navup.png", type: nil)
+      self.mods = ["ctrl": ["subtitle": currentFolder.lastPathComponent]]
       self.arg = parentFolderString
     }
   }
