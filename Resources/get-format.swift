@@ -21,6 +21,7 @@ if fileType.conforms(to: .pdf) { sendType("pdf") }
 
 // Check if plain text
 if fileType.conforms(to: .plainText) { sendType("text") }
+if fileType.conforms(to: .json) { sendType("text") }
 
 // Check if previeweable image
 // Keep after PDF check, since those would also return true
