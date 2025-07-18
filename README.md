@@ -6,7 +6,7 @@ Navigate the file system with previews
 
 ## Usage
 
-Search for folders with the `nav` keyword and press <kbd>↩&#xFE0E;</kbd> to navigate the contents in a thumbnail view. Type to filter.
+Search for folders with the `nav` keyword and press <kbd>↩</kbd> to navigate the contents in a thumbnail view. Type to filter.
 
 ![Filtering for folders to search](Workflow/images/about/navkeyword.png)
 
@@ -14,10 +14,10 @@ Search for folders with the `nav` keyword and press <kbd>↩&#xFE0E;</kbd> to na
 
 ![Filtering for Catan](Workflow/images/about/gridfilter.png)
 
-* <kbd>↩&#xFE0E;</kbd> Open or view file, or navigate inside folder.
-* <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Flip sort order.
-* <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd> Reveal in Finder.
-* <kbd>⇧</kbd><kbd>↩&#xFE0E;</kbd> Navigate to parent folder.
+* <kbd>↩</kbd> Open or view file, or navigate inside folder.
+* <kbd>⌘</kbd><kbd>↩</kbd> Flip sort order.
+* <kbd>⌥</kbd><kbd>↩</kbd> Reveal in Finder.
+* <kbd>⇧</kbd><kbd>↩</kbd> Navigate to parent folder.
 * <kbd>⌃</kbd> Show full name in subtitle.
 
 ![Viewing image](Workflow/images/about/imageview.png)
