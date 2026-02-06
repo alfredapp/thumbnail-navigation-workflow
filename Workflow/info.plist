@@ -127,7 +127,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>775F827A-C691-47B4-95F6-4CABC6D7921E</string>
+				<string>CBDD8F03-5B67-4002-9551-76AE2F648BEF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1533,6 +1533,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>open_file</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>4295B8E2-5439-42E2-948B-E8B8503CADBA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>externaltriggerid</key>
 				<string>open_file</string>
 				<key>passinputasargument</key>
@@ -1546,21 +1561,6 @@
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
 			<string>8FD6A996-1DC0-4E0F-8611-11BD01FC0519</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>open_file</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>4295B8E2-5439-42E2-948B-E8B8503CADBA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1763,9 +1763,9 @@ Configure the Fast Entry section in the [Workflow’s Configuration](https://www
 		<key>4295B8E2-5439-42E2-948B-E8B8503CADBA</key>
 		<dict>
 			<key>xpos</key>
-			<real>2675</real>
+			<real>2585</real>
 			<key>ypos</key>
-			<real>820</real>
+			<real>790</real>
 		</dict>
 		<key>4387584C-BA9A-42E7-A8E7-95B513E6DB9E</key>
 		<dict>
